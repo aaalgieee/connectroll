@@ -64,7 +64,6 @@ yarn build
 # or
 pnpm build
 ```
-```
 
 ## Project Structure
 
