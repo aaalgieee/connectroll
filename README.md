@@ -1,69 +1,98 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# ConnectRoll
 
-Currently, two official plugins are available:
+ConnectRoll is a web application for icebreaker networking events.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## About ConnectRoll
 
-## Expanding the ESLint configuration
+ConnectRoll centers around a dice-rolling mechanic, where players take turns rolling virtual dice to determine outcomes and progress through the game.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Tech Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- **Framework:** React
+- **Build Tool:** Vite
+- **Language:** TypeScript
+- **Styling:** CSS (with support for frameworks like Tailwind CSS)
+- **State Management:** React Context (or your preferred library)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Getting Started
+
+### Prerequisites
+
+- Node.js (>= 18)
+- npm (>= 9) or yarn or pnpm
+
+### Development
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/connectroll.git
+cd connectroll
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Install dependencies:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
 ```
+
+3. Start the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
+
+The app will be available at `http://localhost:5173` (default Vite port).
+
+
+### Building for Production
+
+```bash
+npm run build
+# or
+yarn build
+# or
+pnpm build
+```
+```
+
+## Project Structure
+
+```
+├── src/
+│   ├── assets/         # Images and static assets
+│   ├── components/     # Reusable UI components (add as needed)
+│   ├── App.tsx         # Main app component
+│   ├── main.tsx        # Entry point
+│   └── index.css       # Global styles
+├── public/             # Static assets
+├── package.json        # Project metadata and scripts
+├── tsconfig.json       # TypeScript configuration
+└── README.md           # Project documentation
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Deployment
+
+You can deploy ConnectRoll using platforms like Vercel, Netlify, or your own server. For automated deployment, set up CI/CD workflows (e.g., GitHub Actions) to build and publish your app.
