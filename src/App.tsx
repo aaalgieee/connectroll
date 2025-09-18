@@ -3,33 +3,33 @@ import { useSpring, animated } from 'react-spring'
 
 const challenges = {
   1: {
-    title: "💻 Digital Oops! & Learnings",
-    description: "What's a funny or embarrassing digital mistake you've made (e.g., sending an email to the wrong person, a typo in a presentation), and what did you learn from it?",
+    title: "💡 Your startup in one line",
+    description: "In plain words, what’s your idea and who is it for?",
     color: "bg-gradient-to-br from-indigo-800 to-indigo-950"
   },
   2: {
-    title: "🎬 Problem Solving & Pop Culture",
-    description: "Describe a tricky problem you solved recently (could be tech-related, or something like fixing a broken gadget or organizing an event), and if your life were a movie, what genre would it be?",
+    title: "🧑‍🎓 Who would you talk to first?",
+    description: "Name one student group and one question you’d ask them.",
     color: "bg-gradient-to-br from-teal-800 to-teal-950"
   },
   3: {
-    title: "� Future Visions & Fun Gadgets",
-    description: "If you could invent any gadget or app, what would it do (no tech knowledge required!), and what's one emerging technology you're curious about?",
+    title: "📊 Does this problem really hurt?",
+    description: "Share a quick example of when you saw or felt it.",
     color: "bg-gradient-to-br from-emerald-800 to-emerald-950"
   },
   4: {
-    title: "🌐 Online Discoveries & Life Hacks",
-    description: "What's the most surprisingly useful thing you've ever learned or found online (could be a life hack, a skill, or a funny video), and what's one simple 'hack' that makes your daily life easier?",
+    title: "🛠️ Tiny first version",
+    description: "What’s the simplest thing you could show someone this week?",
     color: "bg-gradient-to-br from-orange-800 to-orange-950"
   },
   5: {
-    title: "🤝 Teamwork Tales & Dream Teams",
-    description: "Share a time you worked well with a team to achieve something, and if you could build your ultimate dream team (for any project!), who would be on it (real or fictional)?",
+    title: "🚀 First 10 users",
+    description: "How would you reach them? Write one message you’d send.",
     color: "bg-gradient-to-br from-rose-800 to-rose-950"
   },
   6: {
-    title: "� Passion Projects & Playlists",
-    description: "What's a personal project or hobby you're passionate about (tech or non-tech!), and what's a song or artist that always gets you motivated?",
+    title: "📈 What will you learn next?",
+    description: "Pick one number to track and your next small experiment.",
     color: "bg-gradient-to-br from-violet-800 to-violet-950"
   }
 }
